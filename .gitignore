@@ -1,0 +1,14 @@
+*.parquet
+__pycache__/
+.ipynb_checkpoints/
+etapa3_cp_cuts.csv
+registro_prueba.json
+ensayos/
+informe/*.aux
+informe/*.log
+informe/*.out
+informe/*.toc
+informe/*.bbl
+informe/*.bcf
+informe/*.blg
+informe/*.run.xml

@@ -1,0 +1,48 @@
+[
+  {
+    "fecha": "2026-10-15T15:03:38",
+    "modo": "ensayo",
+    "autor": "Juan Jose Morales",
+    "version_codigo": "notebook sin git, 2026-10-15",
+    "motivo": "ensayo del mecanismo, objetivo 2",
+    "modelos": {
+      "mayoritaria": "clase mas frecuente, pliegues 1-4"
+    },
+    "huellas": {
+      "particion": "c55dc4d030d48c5cd95960a05c15f41b458e770e8e78eafe55292b1a558e405a",
+      "trabajo": "45a0ed6f4ef48cc25b32172d1c71d9888231645c79e9fbdcfd96493659380210",
+      "sellado": "1904defd1e4382ba07d41d85cf1f767a7684ab69107ec31b099e814cea9b1e6e",
+      "predicciones": "26049b6b4fcda4e665d5c9fb1dadef37d10247fc0049395c17ed9e935cb3b5c1"
+    },
+    "filas": 234596,
+    "pozos": 20,
+    "metricas": {
+      "mayoritaria": {
+        "exactitud_provisional": 0.6586301556718784
+      }
+    }
+  },
+  {
+    "fecha": "2026-10-23T23:29:27",
+    "modo": "ensayo",
+    "autor": "Juan Jose Morales",
+    "version_codigo": "notebook sin git, 2026-10-15",
+    "motivo": "ensayo del mecanismo, objetivo 2",
+    "modelos": {
+      "mayoritaria": "clase mas frecuente, pliegues 1-4"
+    },
+    "huellas": {
+      "particion": "c55dc4d030d48c5cd95960a05c15f41b458e770e8e78eafe55292b1a558e405a",
+      "trabajo": "45a0ed6f4ef48cc25b32172d1c71d9888231645c79e9fbdcfd96493659380210",
+      "sellado": "1904defd1e4382ba07d41d85cf1f767a7684ab69107ec31b099e814cea9b1e6e",
+      "predicciones": "26049b6b4fcda4e665d5c9fb1dadef37d10247fc0049395c17ed9e935cb3b5c1"
+    },
+    "filas": 234596,
+    "pozos": 20,
+    "metricas": {
+      "mayoritaria": {
+        "exactitud_provisional": 0.6586301556718784
+      }
+    }
+  }
+]

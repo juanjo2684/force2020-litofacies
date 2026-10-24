@@ -1,0 +1,81 @@
+{
+  "fecha": "2026-10-23",
+  "fuente": "github.com/bolgebrygg/Force-2020-Machine-Learning-competition/lithology_competition/data",
+  "fuente_git_sha1": {
+    "train.zip": "e1c846321d64388af6d971e8626cabd2e8b22f36",
+    "hidden_test.csv": "2c6adce79789ee9a0f09a1b3f664be0422023a4f",
+    "leaderboard_test_features.csv": "7153017194f89b36ab17b37ff2079adbdc18cee5",
+    "leaderboard_test_target.csv": "50ff419e342f06b58566ef4c41c236f721522b4a",
+    "penalty_matrix.npy": "b96178eb8d3287c36061f595f63ea454cb9ee891"
+  },
+  "archivos": {
+    "etapa1_pool_consolidado.parquet": {
+      "filas": 1429694,
+      "columnas": 30,
+      "pozos": 118,
+      "mb": 138.6,
+      "sha256": "bbb4ea2e4f61fe22877e1092a3a9c40dcc92b52a3c5f6bf762be585e570908bb",
+      "igual_al_releer": true
+    },
+    "etapa2_pool_curado.parquet": {
+      "filas": 1429694,
+      "columnas": 47,
+      "pozos": 118,
+      "mb": 216.6,
+      "sha256": "82f590e8ba367d1a5d70de55835c86c0ebece911bdbf61eec7bd47eb6232b2fd",
+      "igual_al_releer": true
+    }
+  },
+  "etapa4_particion": {
+    "archivo": "etapa4_particion.csv",
+    "fecha": "2026-10-15",
+    "sha256": "c55dc4d030d48c5cd95960a05c15f41b458e770e8e78eafe55292b1a558e405a",
+    "semilla": 0,
+    "algoritmo": "estratificacion iterativa multietiqueta (Sechidis et al. 2011), dos pasos",
+    "proporciones": {
+      "test": "1/6",
+      "cv": "5/6",
+      "pliegues": 5,
+      "validacion_fija": 0
+    },
+    "etiquetas": [
+      "Sandstone",
+      "Sandstone/Shale",
+      "Shale",
+      "Marl",
+      "Dolomite",
+      "Limestone",
+      "Chalk",
+      "Halite",
+      "Anhydrite",
+      "Tuff",
+      "Coal",
+      "Basement",
+      "suite_0",
+      "suite_1",
+      "suite_2"
+    ],
+    "min_filas_presencia": 8,
+    "grupos": 117,
+    "pozos": 118,
+    "datos_origen_sha256": "82f590e8ba367d1a5d70de55835c86c0ebece911bdbf61eec7bd47eb6232b2fd"
+  },
+  "etapa4_prueba": {
+    "fecha": "2026-10-15",
+    "regla": "claude/etapa4-objetivo2-prueba.md",
+    "particion_sha256": "c55dc4d030d48c5cd95960a05c15f41b458e770e8e78eafe55292b1a558e405a",
+    "datos_origen_sha256": "82f590e8ba367d1a5d70de55835c86c0ebece911bdbf61eec7bd47eb6232b2fd",
+    "trabajo": {
+      "archivo": "equipo/etapa4_pool_trabajo.parquet",
+      "sha256": "45a0ed6f4ef48cc25b32172d1c71d9888231645c79e9fbdcfd96493659380210",
+      "filas": 1429694,
+      "filas_sin_etiqueta": 242918
+    },
+    "sellado": {
+      "archivo": "etapa4_prueba_sellada.parquet",
+      "sha256": "1904defd1e4382ba07d41d85cf1f767a7684ab69107ec31b099e814cea9b1e6e",
+      "filas": 242918,
+      "pozos": 22
+    }
+  }
+}
