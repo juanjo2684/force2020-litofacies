@@ -4,6 +4,7 @@ import pandas as pd
 DATA_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, f"{DATA_DIR}/equipo")
 from acceso_datos import file_sha256, load_split, LITH
+from metricas import strata
 
 KEYS = ["WELL", "DEPTH_MD"]
 
@@ -18,11 +19,13 @@ def evaluate_test(pred_path, metric_fn, models, author, code_version, reason,
 
     if dry_run:
         registry = f"{registry_dir}/registro_ensayo.json"
-        truth = load_split(["fold0"])[KEYS + [LITH]]
+        eval_set = ["fold0"]
+        truth = load_split(eval_set)[KEYS + [LITH]]
     else:
         registry = f"{registry_dir}/registro_prueba.json"
         if os.path.exists(registry) and not reentry:
             raise RuntimeError("la prueba ya se uso; una re-evaluacion exige reentry=True y motivo")
+        eval_set = ["test"]
         sealed_path = f"{DATA_DIR}/{sealed['archivo']}"
         assert file_sha256(sealed_path) == sealed["sha256"], "el archivo sellado no coincide con el manifiesto"
         truth = pd.read_parquet(sealed_path, columns=KEYS + [LITH])
@@ -33,7 +36,14 @@ def evaluate_test(pred_path, metric_fn, models, author, code_version, reason,
     merged = truth.merge(preds, on=KEYS, how="outer", indicator=True)
     assert (merged["_merge"] == "both").all(), "las filas de predicciones y verdad no coinciden"
 
-    metrics = {m: metric_fn(merged[LITH].to_numpy(), merged[m].to_numpy()) for m in models}
+    # el estrato de posicion sale de profundidad y sub-tramo, sin etiqueta
+    pos = load_split(eval_set, labels=False)[KEYS + ["depth_segment"]]
+    pos["stratum"] = strata(pos["WELL"], pos["DEPTH_MD"], pos["depth_segment"])
+    merged = merged.drop(columns="_merge").merge(pos[KEYS + ["stratum"]], on=KEYS, how="left")
+    assert merged["stratum"].notna().all()
+
+    metrics = {m: metric_fn(merged[["WELL", "stratum"]].assign(y_true=merged[LITH], y_pred=merged[m]))
+               for m in models}
 
     entries = []
     if os.path.exists(registry):
@@ -55,5 +65,5 @@ def evaluate_test(pred_path, metric_fn, models, author, code_version, reason,
         "metricas": metrics,
     })
     with open(registry, "w") as f:
-        json.dump(entries, f, indent=2, ensure_ascii=False)
+        json.dump(entries, f, indent=2, ensure_ascii=False, allow_nan=False)
     return metrics
