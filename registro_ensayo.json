@@ -44,5 +44,810 @@
         "exactitud_provisional": 0.6586301556718784
       }
     }
+  },
+  {
+    "fecha": "2026-11-03T19:22:37",
+    "modo": "ensayo",
+    "autor": "Juan Jose Morales",
+    "version_codigo": "notebook sin git, 2026-10-15",
+    "motivo": "ensayo del mecanismo, objetivo 2",
+    "modelos": {
+      "mayoritaria": "clase mas frecuente, pliegues 1-4"
+    },
+    "huellas": {
+      "particion": "c55dc4d030d48c5cd95960a05c15f41b458e770e8e78eafe55292b1a558e405a",
+      "trabajo": "45a0ed6f4ef48cc25b32172d1c71d9888231645c79e9fbdcfd96493659380210",
+      "sellado": "1904defd1e4382ba07d41d85cf1f767a7684ab69107ec31b099e814cea9b1e6e",
+      "predicciones": "26049b6b4fcda4e665d5c9fb1dadef37d10247fc0049395c17ed9e935cb3b5c1"
+    },
+    "filas": 234596,
+    "pozos": 20,
+    "metricas": {
+      "mayoritaria": {
+        "exactitud_provisional": 0.6586301556718784
+      }
+    }
+  },
+  {
+    "fecha": "2026-11-03T22:36:55",
+    "modo": "ensayo",
+    "autor": "Juan Jose Morales",
+    "version_codigo": "notebook sin git, 2026-10-15",
+    "motivo": "ensayo del mecanismo, objetivo 2",
+    "modelos": {
+      "mayoritaria": "clase mas frecuente, pliegues 1-4"
+    },
+    "huellas": {
+      "particion": "c55dc4d030d48c5cd95960a05c15f41b458e770e8e78eafe55292b1a558e405a",
+      "trabajo": "45a0ed6f4ef48cc25b32172d1c71d9888231645c79e9fbdcfd96493659380210",
+      "sellado": "1904defd1e4382ba07d41d85cf1f767a7684ab69107ec31b099e814cea9b1e6e",
+      "predicciones": "26049b6b4fcda4e665d5c9fb1dadef37d10247fc0049395c17ed9e935cb3b5c1"
+    },
+    "filas": 234596,
+    "pozos": 20,
+    "metricas": {
+      "mayoritaria": {
+        "exactitud_provisional": 0.6586301556718784
+      }
+    }
+  },
+  {
+    "fecha": "2026-11-03T22:37:23",
+    "modo": "ensayo",
+    "autor": "Juan Jose Morales",
+    "version_codigo": "notebook sin git, 2026-11-03",
+    "motivo": "ensayo con la metrica final, objetivo 3",
+    "modelos": {
+      "mayoritaria": "clase mas frecuente, pliegues 1-4",
+      "aleatoria_prior": "sorteo con las proporciones de clase de los pliegues 1-4, semilla 0"
+    },
+    "huellas": {
+      "particion": "c55dc4d030d48c5cd95960a05c15f41b458e770e8e78eafe55292b1a558e405a",
+      "trabajo": "45a0ed6f4ef48cc25b32172d1c71d9888231645c79e9fbdcfd96493659380210",
+      "sellado": "1904defd1e4382ba07d41d85cf1f767a7684ab69107ec31b099e814cea9b1e6e",
+      "predicciones": "26cdcff08d0eb0a28ca1754dda265cd607656425abacb877688ee90b4e65852a"
+    },
+    "filas": 234596,
+    "pozos": 20,
+    "metricas": {
+      "mayoritaria": {
+        "filas": 234596,
+        "principal": {
+          "score_pozo": -1.0718062916810214,
+          "ic95": [
+            -1.289481480939563,
+            -0.8878752714747857
+          ],
+          "pozos": 20
+        },
+        "complementarias": {
+          "score_filas": -1.0326651988951219,
+          "f1_macro_ic95": [
+            0.08195876413881961,
+            0.10197670177837953
+          ],
+          "f1_macro": 0.08824285288403219,
+          "exactitud_balanceada": 0.1111111111111111,
+          "exactitud": 0.6586301556718784,
+          "clases_evaluables": [
+            "Sandstone",
+            "Sandstone/Shale",
+            "Shale",
+            "Marl",
+            "Dolomite",
+            "Limestone",
+            "Chalk",
+            "Tuff",
+            "Coal"
+          ]
+        },
+        "por_clase": {
+          "Sandstone": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "filas": 32156,
+            "pozos": 20,
+            "predichas": 0,
+            "falsos_positivos": 0,
+            "evaluable": true
+          },
+          "Sandstone/Shale": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "filas": 21455,
+            "pozos": 20,
+            "predichas": 0,
+            "falsos_positivos": 0,
+            "evaluable": true
+          },
+          "Shale": {
+            "precision": 0.6586301556718784,
+            "recall": 1.0,
+            "f1": 0.7941856759562897,
+            "filas": 154512,
+            "pozos": 20,
+            "predichas": 234596,
+            "falsos_positivos": 80084,
+            "evaluable": true
+          },
+          "Marl": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "filas": 7826,
+            "pozos": 14,
+            "predichas": 0,
+            "falsos_positivos": 0,
+            "evaluable": true
+          },
+          "Dolomite": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "filas": 256,
+            "pozos": 7,
+            "predichas": 0,
+            "falsos_positivos": 0,
+            "evaluable": true
+          },
+          "Limestone": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "filas": 13634,
+            "pozos": 19,
+            "predichas": 0,
+            "falsos_positivos": 0,
+            "evaluable": true
+          },
+          "Chalk": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "filas": 1013,
+            "pozos": 2,
+            "predichas": 0,
+            "falsos_positivos": 0,
+            "evaluable": true
+          },
+          "Halite": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "filas": 20,
+            "pozos": 1,
+            "predichas": 0,
+            "falsos_positivos": 0,
+            "evaluable": false
+          },
+          "Anhydrite": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "filas": 17,
+            "pozos": 1,
+            "predichas": 0,
+            "falsos_positivos": 0,
+            "evaluable": false
+          },
+          "Tuff": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "filas": 3008,
+            "pozos": 12,
+            "predichas": 0,
+            "falsos_positivos": 0,
+            "evaluable": true
+          },
+          "Coal": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "filas": 699,
+            "pozos": 10,
+            "predichas": 0,
+            "falsos_positivos": 0,
+            "evaluable": true
+          },
+          "Basement": {
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "filas": 0,
+            "pozos": 0,
+            "predichas": 0,
+            "falsos_positivos": 0,
+            "evaluable": false
+          }
+        },
+        "confusion": [
+          [
+            0,
+            0,
+            32156,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            21455,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            154512,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            7826,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            256,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            13634,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1013,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            20,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            17,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            3008,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            699,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "por_pozo": {
+          "15/9-13": -1.0109058565955118,
+          "15/9-23": -1.1332595136942962,
+          "16/10-1": -1.0205728429985856,
+          "25/11-24": -1.1798867699642432,
+          "25/2-14": -1.141422032828283,
+          "25/4-5": -1.727689632688546,
+          "25/6-2": -0.8074358974358974,
+          "25/8-7": -0.7671130125569507,
+          "30/3-3": -1.031410953078486,
+          "30/6-5": -0.9339642262895175,
+          "31/2-10": -0.6857079597033101,
+          "31/3-4": -1.6993909243072345,
+          "33/9-17": -0.4208925951010272,
+          "34/10-16 R": -1.0881450488145048,
+          "34/5-1 A": -0.28695518092105265,
+          "34/5-1 S": -1.039375274967004,
+          "35/3-7 S": -1.135738156084136,
+          "35/8-4": -0.6530546327057954,
+          "35/9-10 S": -2.364943194991885,
+          "36/7-3": -1.3082621278941566
+        },
+        "por_estrato": {
+          "borde": {
+            "filas": 13858,
+            "pozos": 20,
+            "score_pozo": -1.267238350591716,
+            "score_filas": -1.2085889017174196,
+            "exactitud": 0.592509741665464
+          },
+          "interior": {
+            "filas": 219838,
+            "pozos": 20,
+            "score_pozo": -1.0558184529062815,
+            "score_filas": -1.0190816646803555,
+            "exactitud": 0.6636295817829493
+          },
+          "sin_ventana": {
+            "filas": 900,
+            "pozos": 4,
+            "score_pozo": -1.5498445712775637,
+            "score_filas": -1.6418055555555555,
+            "exactitud": 0.45555555555555555
+          }
+        }
+      },
+      "aleatoria_prior": {
+        "filas": 234596,
+        "principal": {
+          "score_pozo": -1.7050825428096943,
+          "ic95": [
+            -1.800879831121573,
+            -1.6146681702955605
+          ],
+          "pozos": 20
+        },
+        "complementarias": {
+          "score_filas": -1.6957215809306212,
+          "f1_macro_ic95": [
+            0.10753758126570936,
+            0.12318935377706595
+          ],
+          "f1_macro": 0.10957905530544887,
+          "exactitud_balanceada": 0.11014092395012282,
+          "exactitud": 0.4313969547647871,
+          "clases_evaluables": [
+            "Sandstone",
+            "Sandstone/Shale",
+            "Shale",
+            "Marl",
+            "Dolomite",
+            "Limestone",
+            "Chalk",
+            "Tuff",
+            "Coal"
+          ]
+        },
+        "por_clase": {
+          "Sandstone": {
+            "precision": 0.134991831704451,
+            "recall": 0.14647344197039433,
+            "f1": 0.14049845630676988,
+            "filas": 32156,
+            "pozos": 20,
+            "predichas": 34891,
+            "falsos_positivos": 30181,
+            "evaluable": true
+          },
+          "Sandstone/Shale": {
+            "precision": 0.09146341463414634,
+            "recall": 0.14192495921696574,
+            "f1": 0.11123897199846568,
+            "filas": 21455,
+            "pozos": 20,
+            "predichas": 33292,
+            "falsos_positivos": 30247,
+            "evaluable": true
+          },
+          "Shale": {
+            "precision": 0.6589150597564187,
+            "recall": 0.5991055710883297,
+            "f1": 0.6275885680968409,
+            "filas": 154512,
+            "pozos": 20,
+            "predichas": 140487,
+            "falsos_positivos": 47918,
+            "evaluable": true
+          },
+          "Marl": {
+            "precision": 0.03727227143573458,
+            "recall": 0.028494761052900587,
+            "f1": 0.03229777681222391,
+            "filas": 7826,
+            "pozos": 14,
+            "predichas": 5983,
+            "falsos_positivos": 5760,
+            "evaluable": true
+          },
+          "Dolomite": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "filas": 256,
+            "pozos": 7,
+            "predichas": 442,
+            "falsos_positivos": 442,
+            "evaluable": true
+          },
+          "Limestone": {
+            "precision": 0.055376393623882796,
+            "recall": 0.04408097403549949,
+            "f1": 0.049087270796749294,
+            "filas": 13634,
+            "pozos": 19,
+            "predichas": 10853,
+            "falsos_positivos": 10252,
+            "evaluable": true
+          },
+          "Chalk": {
+            "precision": 0.005023183925811438,
+            "recall": 0.012833168805528134,
+            "f1": 0.007220216606498196,
+            "filas": 1013,
+            "pozos": 2,
+            "predichas": 2588,
+            "falsos_positivos": 2575,
+            "evaluable": true
+          },
+          "Halite": {
+            "precision": 0.0004926108374384236,
+            "recall": 0.05,
+            "f1": 0.0009756097560975609,
+            "filas": 20,
+            "pozos": 1,
+            "predichas": 2030,
+            "falsos_positivos": 2029,
+            "evaluable": false
+          },
+          "Anhydrite": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "filas": 17,
+            "pozos": 1,
+            "predichas": 333,
+            "falsos_positivos": 333,
+            "evaluable": false
+          },
+          "Tuff": {
+            "precision": 0.01317157712305026,
+            "recall": 0.012632978723404254,
+            "f1": 0.012896657050738164,
+            "filas": 3008,
+            "pozos": 12,
+            "predichas": 2885,
+            "falsos_positivos": 2847,
+            "evaluable": true
+          },
+          "Coal": {
+            "precision": 0.005082592121982211,
+            "recall": 0.005722460658082976,
+            "f1": 0.005383580080753701,
+            "filas": 699,
+            "pozos": 10,
+            "predichas": 787,
+            "falsos_positivos": 783,
+            "evaluable": true
+          },
+          "Basement": {
+            "precision": 0.0,
+            "recall": null,
+            "f1": null,
+            "filas": 0,
+            "pozos": 0,
+            "predichas": 25,
+            "falsos_positivos": 25,
+            "evaluable": false
+          }
+        },
+        "confusion": [
+          [
+            4710,
+            4555,
+            19255,
+            878,
+            66,
+            1470,
+            394,
+            280,
+            50,
+            387,
+            106,
+            5
+          ],
+          [
+            3209,
+            3045,
+            12771,
+            539,
+            49,
+            1055,
+            214,
+            193,
+            32,
+            270,
+            73,
+            5
+          ],
+          [
+            22906,
+            22125,
+            92569,
+            3875,
+            274,
+            7095,
+            1704,
+            1320,
+            214,
+            1906,
+            510,
+            14
+          ],
+          [
+            1222,
+            1066,
+            4605,
+            223,
+            18,
+            403,
+            79,
+            84,
+            11,
+            82,
+            33,
+            0
+          ],
+          [
+            50,
+            30,
+            157,
+            4,
+            0,
+            8,
+            3,
+            2,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            2090,
+            1803,
+            8282,
+            346,
+            25,
+            601,
+            143,
+            103,
+            17,
+            175,
+            48,
+            1
+          ],
+          [
+            148,
+            147,
+            607,
+            19,
+            1,
+            45,
+            13,
+            10,
+            5,
+            13,
+            5,
+            0
+          ],
+          [
+            3,
+            2,
+            10,
+            1,
+            0,
+            2,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            3,
+            12,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            464,
+            413,
+            1791,
+            77,
+            8,
+            141,
+            35,
+            29,
+            4,
+            38,
+            8,
+            0
+          ],
+          [
+            88,
+            103,
+            428,
+            21,
+            1,
+            33,
+            3,
+            8,
+            0,
+            10,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "por_pozo": {
+          "15/9-13": -1.7013957307060756,
+          "15/9-23": -1.7996700714092018,
+          "16/10-1": -1.78481612446959,
+          "25/11-24": -1.767580452920143,
+          "25/2-14": -1.7756549873737373,
+          "25/4-5": -2.039181699630515,
+          "25/6-2": -1.6037606837606837,
+          "25/8-7": -1.5770918990998999,
+          "30/3-3": -1.6804446439540708,
+          "30/6-5": -1.6169000739508228,
+          "31/2-10": -1.5203559171925163,
+          "31/3-4": -2.012785940115306,
+          "33/9-17": -1.3978016706174512,
+          "34/10-16 R": -1.6892956764295677,
+          "34/5-1 A": -1.324878358004386,
+          "34/5-1 S": -1.670699516058073,
+          "35/3-7 S": -1.6872419893847062,
+          "35/8-4": -1.4642395717977112,
+          "35/9-10 S": -2.223626246232321,
+          "36/7-3": -1.7642296030871003
+        },
+        "por_estrato": {
+          "borde": {
+            "filas": 13858,
+            "pozos": 20,
+            "score_pozo": -1.7798631656804733,
+            "score_filas": -1.7530217203059604,
+            "exactitud": 0.4052532833020638
+          },
+          "interior": {
+            "filas": 219838,
+            "pozos": 20,
+            "score_pozo": -1.7003522592475733,
+            "score_filas": -1.6914199319498904,
+            "exactitud": 0.4333099828055204
+          },
+          "sin_ventana": {
+            "filas": 900,
+            "pozos": 4,
+            "score_pozo": -1.8185994836145398,
+            "score_filas": -1.8641666666666667,
+            "exactitud": 0.36666666666666664
+          }
+        }
+      }
+    }
   }
 ]
