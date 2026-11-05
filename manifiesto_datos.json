@@ -77,5 +77,15 @@
       "filas": 242918,
       "pozos": 22
     }
+  },
+  "etapa4_metricas": {
+    "fecha": "2026-11-03",
+    "regla": "claude/etapa4-objetivo3-metricas.md",
+    "penalizacion": {
+      "archivo": "equipo/penalty_matrix.npy",
+      "fuente": "https://raw.githubusercontent.com/bolgebrygg/Force-2020-Machine-Learning-competition/master/lithology_competition/data/penalty_matrix.npy",
+      "blob_git": "b96178eb8d3287c36061f595f63ea454cb9ee891"
+    },
+    "sha256": "c312481af94d3557616b7ed79b5d1a12afee380fd471188785ab31874f159d43"
   }
 }
